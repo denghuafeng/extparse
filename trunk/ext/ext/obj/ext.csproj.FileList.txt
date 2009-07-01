@@ -1,0 +1,14 @@
+bin\Debug\Extparse.exe.config
+bin\Debug\Extparse.exe.manifest
+bin\Debug\Extparse.application
+bin\Debug\Extparse.exe
+bin\Debug\Extparse.pdb
+bin\Debug\IconLib.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\com.amonsoft.extparse.FM_ExtParse.resources
+obj\Debug\com.amonsoft.extparse.Properties.Resources.resources
+obj\Debug\ext.csproj.GenerateResource.Cache
+obj\Debug\Extparse.exe.manifest
+obj\Debug\Extparse.application
+obj\Debug\Extparse.exe
+obj\Debug\Extparse.pdb
