@@ -1,0 +1,429 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">False</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/d:Properties/f:Settings.Designer.cs" caret="1526" fromTop="35" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:Program.cs" caret="0" fromTop="0" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/d:Web References/d:cn.amonsoft/f:Reference.cs" caret="6258" fromTop="141" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.Designer.cs" caret="15941" fromTop="22" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/d:Properties/f:AssemblyInfo.cs" caret="1067" fromTop="24" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="38461" fromTop="18" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="36202" fromTop="35" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="36466" fromTop="32" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="31120" fromTop="15" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="35974" fromTop="30" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="35922" fromTop="28" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="34351" fromTop="31" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="27078" fromTop="9" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="27823" fromTop="22" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="27975" fromTop="37" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="29799" fromTop="30" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="30142" fromTop="36" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="30485" fromTop="42" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="29457" fromTop="24" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="37180" fromTop="7" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="35291" fromTop="11" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="35728" fromTop="23" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="34666" fromTop="16" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="27158" fromTop="90" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="14092" fromTop="22" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="15333" fromTop="46" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="14775" fromTop="46" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="38068" fromTop="45" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="37423" fromTop="6" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="37681" fromTop="37" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="129" fromTop="4" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="33580" fromTop="71" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="0" fromTop="0" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="325" fromTop="11" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="34940" fromTop="23" />
+      <File id="8B1583F2-3F51-49A4-8830-6C59C7F8C294/f:ExtParse.cs" caret="34562" fromTop="23" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerMSTest>
+    <UseTestRunConfigFromMetadataFile>False</UseTestRunConfigFromMetadataFile>
+  </UnitTestRunnerMSTest>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="com" priority="4" />
+      <Item value="amonsoft" priority="5" />
+      <Item value="extparse" priority="2" />
+      <Item value="Properties" priority="3" />
+      <Item value="Resources" priority="1" />
+      <Item value="FM_ExtParse" priority="1" />
+      <Item value="this" priority="5" />
+      <Item value="WindowState" priority="0" />
+      <Item value="e" priority="0" />
+      <Item value="Point" priority="6" />
+      <Item value="Location" priority="0" />
+      <Item value="private" priority="10" />
+      <Item value="void" priority="4" />
+      <Item value="imageList1" priority="0" />
+      <Item value="String" priority="17" />
+      <Item value="textBox1" priority="0" />
+      <Item value="FileInfo" priority="1" />
+      <Item value="File" priority="6" />
+      <Item value="new" priority="20" />
+      <Item value="Directory" priority="0" />
+      <Item value="System" priority="0" />
+      <Item value="IO" priority="0" />
+      <Item value="tf_ExtsName" priority="0" />
+      <Item value="Path" priority="1" />
+      <Item value="finally" priority="0" />
+      <Item value="propSet" priority="0" />
+      <Item value="opacity" priority="0" />
+      <Item value="Settings" priority="5" />
+      <Item value="value" priority="0" />
+      <Item value="set" priority="0" />
+      <Item value="MessageBox" priority="2" />
+      <Item value="text" priority="0" />
+      <Item value="return" priority="21" />
+      <Item value="true" priority="6" />
+      <Item value="if" priority="49" />
+      <Item value="CheckInput" priority="0" />
+      <Item value="XmlDocument" priority="1" />
+      <Item value="xml" priority="10" />
+      <Item value="TF_ExtsName" priority="2" />
+      <Item value="ofd" priority="1" />
+      <Item value="fileName" priority="1" />
+      <Item value="XmlNode" priority="10" />
+      <Item value="MessageBoxIcon" priority="1" />
+      <Item value="as" priority="0" />
+      <Item value="XmlNodeList" priority="2" />
+      <Item value="list" priority="12" />
+      <Item value="null" priority="15" />
+      <Item value="int" priority="28" />
+      <Item value="size" priority="4" />
+      <Item value="ReadExtsInfo" priority="0" />
+      <Item value="node" priority="14" />
+      <Item value="temp" priority="22" />
+      <Item value="LC_ExtsSoft" priority="1" />
+      <Item value="LC_ExtsType" priority="1" />
+      <Item value="LC_ExtsPlat" priority="1" />
+      <Item value="n" priority="12" />
+      <Item value="ShowInnerText" priority="6" />
+      <Item value="static" priority="6" />
+      <Item value="ShowAttribute" priority="0" />
+      <Item value="LC_ExtsArch" priority="0" />
+      <Item value="LC_ExtsFreq" priority="1" />
+      <Item value="LC_ExtsLink" priority="0" />
+      <Item value="c" priority="1" />
+      <Item value="TB_ExtsDesp" priority="0" />
+      <Item value="PB_CorpIcon" priority="3" />
+      <Item value="TP_ToolTips" priority="1" />
+      <Item value="PB_FileIcon" priority="1" />
+      <Item value="PB_IdioIcon" priority="0" />
+      <Item value="for" priority="7" />
+      <Item value="i" priority="13" />
+      <Item value="IL_IconList" priority="2" />
+      <Item value="Image" priority="6" />
+      <Item value="Icon" priority="2" />
+      <Item value="ic" priority="0" />
+      <Item value="LV_ExtsAsoc" priority="1" />
+      <Item value="Stream" priority="2" />
+      <Item value="Uri" priority="2" />
+      <Item value="uri" priority="0" />
+      <Item value="PB_SoftIcon" priority="1" />
+      <Item value="NetworkStream" priority="0" />
+      <Item value="StreamReader" priority="1" />
+      <Item value="sr" priority="0" />
+      <Item value="HttpWebRequest" priority="0" />
+      <Item value="req" priority="1" />
+      <Item value="stream" priority="2" />
+      <Item value="LinkLabel" priority="1" />
+      <Item value="lls" priority="17" />
+      <Item value="LL_LastPage" priority="3" />
+      <Item value="LL_NextPage" priority="4" />
+      <Item value="idx" priority="23" />
+      <Item value="LL_PageIdx1" priority="0" />
+      <Item value="Color" priority="1" />
+      <Item value="s" priority="0" />
+      <Item value="LL_PageIdx9" priority="1" />
+      <Item value="o" priority="5" />
+      <Item value="t" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="x" priority="5" />
+      <Item value="p" priority="2" />
+      <Item value="while" priority="4" />
+      <Item value="false" priority="10" />
+      <Item value="cnt" priority="5" />
+      <Item value="off" priority="4" />
+      <Item value="PB_Menu" priority="0" />
+      <Item value="LC_ExtsUpdt" priority="0" />
+      <Item value="DateTime" priority="0" />
+      <Item value="PAGESIZE" priority="3" />
+      <Item value="ReadExtsData" priority="1" />
+      <Item value="continue" priority="5" />
+      <Item value="foreach" priority="4" />
+      <Item value="NodeLabelEditEventHandler" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="key" priority="0" />
+      <Item value="key2" priority="9" />
+      <Item value="key4" priority="4" />
+      <Item value="bool" priority="0" />
+      <Item value="exit" priority="1" />
+      <Item value="list2" priority="3" />
+      <Item value="node2" priority="1" />
+      <Item value="mime" priority="2" />
+      <Item value="list1" priority="1" />
+      <Item value="XmlAttribute" priority="0" />
+      <Item value="tmp" priority="0" />
+      <Item value="NeedExts" priority="0" />
+      <Item value="exts" priority="7" />
+      <Item value="cn" priority="1" />
+      <Item value="Exts0001" priority="1" />
+      <Item value="inet" priority="2" />
+      <Item value="Visible" priority="0" />
+      <Item value="FindExts" priority="1" />
+      <Item value="cfg" priority="0" />
+      <Item value="Message" priority="0" />
+      <Item value="MessageBoxButtons" priority="0" />
+      <Item value="DialogResult" priority="1" />
+      <Item value="dr" priority="0" />
+      <Item value="key1" priority="0" />
+      <Item value="desp" priority="2" />
+      <Item value="soft" priority="0" />
+      <Item value="path" priority="6" />
+      <Item value="try" priority="0" />
+      <Item value="Drawing" priority="2" />
+      <Item value="IconLib" priority="0" />
+      <Item value="MultiIcon" priority="1" />
+      <Item value="mi" priority="1" />
+      <Item value="SingleIcon" priority="0" />
+      <Item value="List&lt;Image&gt;" priority="0" />
+      <Item value="si" priority="2" />
+      <Item value="icon" priority="3" />
+      <Item value="dpt" priority="0" />
+      <Item value="IconImageFormat" priority="0" />
+      <Item value="img" priority="9" />
+      <Item value="ReadIcon" priority="1" />
+      <Item value="file" priority="1" />
+      <Item value="byte" priority="4" />
+      <Item value="Length" priority="1" />
+      <Item value="MemoryStream" priority="1" />
+      <Item value="g" priority="0" />
+      <Item value="ImageFormat" priority="0" />
+      <Item value="b" priority="0" />
+      <Item value="ms" priority="1" />
+      <Item value="localhost" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@com.amonsoft.extparse.Properties.Resources">
+      <Item value="ExitP" priority="0" />
+      <Item value="MenuP" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ext.FM_ExtParse">
+      <Item value="WindowState" priority="0" />
+      <Item value="Move" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.FormWindowState">
+      <Item value="GetType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.FormWindowState">
+      <Item value="Minimized" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.MouseEventArgs">
+      <Item value="Location" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ImageList">
+      <Item value="Images" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ImageList+ImageCollection">
+      <Item value="Add" priority="1" />
+      <Item value="Clear" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="GetExtension" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@com.amonsoft.extparse.Properties.Settings">
+      <Item value="Default" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:com.amonsoft.extparse.Properties.Settings">
+      <Item value="form_top_first" priority="2" />
+      <Item value="Save" priority="1" />
+      <Item value="form_run_first" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBoxButtons">
+      <Item value="OK" priority="1" />
+      <Item value="YesNo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty" priority="4" />
+      <Item value="Format" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlDocument">
+      <Item value="Load" priority="0" />
+      <Item value="SelectNodes" priority="3" />
+      <Item value="SelectSingleNode" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToUpper" priority="2" />
+      <Item value="ToLower" priority="2" />
+      <Item value="LastIndexOf" priority="0" />
+      <Item value="Substring" priority="1" />
+      <Item value="EndsWith" priority="0" />
+      <Item value="TrimEnd" priority="0" />
+      <Item value="Trim" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.OpenFileDialog">
+      <Item value="FileName" priority="0" />
+      <Item value="Filter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.LinkLabel">
+      <Item value="Text" priority="1" />
+      <Item value="LinkColor" priority="1" />
+      <Item value="Location" priority="10" />
+      <Item value="Visible" priority="3" />
+      <Item value="EnabledChanged" priority="0" />
+      <Item value="Enabled" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBoxIcon">
+      <Item value="Information" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlNodeList">
+      <Item value="Count" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlNode">
+      <Item value="InnerText" priority="11" />
+      <Item value="SelectSingleNode" priority="7" />
+      <Item value="Attributes" priority="5" />
+      <Item value="SelectNodes" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Control">
+      <Item value="Text" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.PictureBox">
+      <Item value="ImageLocation" priority="1" />
+      <Item value="Image" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolTip">
+      <Item value="SetToolTip" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView">
+      <Item value="Items" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView+ListViewItemCollection">
+      <Item value="Add" priority="0" />
+      <Item value="Clear" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlAttribute">
+      <Item value="ToString" priority="0" />
+      <Item value="Value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Open" priority="0" />
+      <Item value="Exists" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.HttpWebRequest">
+      <Item value="Create" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.HttpWebRequest">
+      <Item value="GetResponse" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.WebResponse">
+      <Item value="GetResponseStream" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.WebRequest">
+      <Item value="GetResponse" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="Close" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Color">
+      <Item value="Red" priority="2" />
+      <Item value="Blue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Point">
+      <Item value="X" priority="6" />
+      <Item value="Offset" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Win32.RegistryKey">
+      <Item value="GetSubKeyNames" priority="0" />
+      <Item value="OpenSubKey" priority="3" />
+      <Item value="GetValue" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:com.amonsoft.extparse.cn.amonsoft.Exts0001">
+      <Item value="save" priority="0" />
+      <Item value="extsAsync" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DialogResult">
+      <Item value="Yes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.IconLib.MultiIcon">
+      <Item value="Load" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.IconLib.SingleIcon">
+      <Item value="Icon" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.IconLib.IconImage">
+      <Item value="Icon" priority="1" />
+      <Item value="ColorsInPalette" priority="0" />
+      <Item value="IconImageFormat" priority="0" />
+      <Item value="PixelFormat" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Icon">
+      <Item value="ToBitmap" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Imaging.PixelFormat">
+      <Item value="CompareTo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Imaging.PixelFormat">
+      <Item value="Format8bppIndexed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Clear" priority="0" />
+      <Item value="Add" priority="0" />
+      <Item value="ToArray" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Image">
+      <Item value="Save" priority="0" />
+      <Item value="Width" priority="0" />
+      <Item value="Height" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Imaging.ImageFormat">
+      <Item value="Png" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.MemoryStream">
+      <Item value="GetBuffer" priority="0" />
+      <Item value="Flush" priority="0" />
+      <Item value="Close" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
