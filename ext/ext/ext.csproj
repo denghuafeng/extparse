@@ -25,9 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <UpdateUrl>http://localhost/Extparse/</UpdateUrl>
-    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
-    <WebPage>publish.htm</WebPage>
+    <UpdateUrl>http://amonsoft.cn/down/</UpdateUrl>
     <ApplicationVersion>3.3.0.%2a</ApplicationVersion>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -129,7 +127,6 @@
     <Content Include="Logo.ico" />
     <Content Include="IconLib.dll" />
     <None Include="Web References\cn.amonsoft\exts0001.disco" />
-    <None Include="ext_TemporaryKey.pfx" />
     <None Include="Resources\00030.png" />
     <None Include="Resources\00040.png" />
     <None Include="Web References\cn.amonsoft\exts0001.wsdl" />
