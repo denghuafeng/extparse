@@ -77,6 +77,8 @@ namespace com.amonsoft.extparse
             this.TP_ToolTips = new System.Windows.Forms.ToolTip(this.components);
             this.PM_MenuList = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.MI_SoftInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.MI_HomePage = new System.Windows.Forms.ToolStripMenuItem();
+            this.MI_SoftCode = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,6 +104,7 @@ namespace com.amonsoft.extparse
             this.MI_SearchYH = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_SearchYD = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_SearchBD = new System.Windows.Forms.ToolStripMenuItem();
+            this.MI_VoteExts = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.MI_HideForm = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_ExitForm = new System.Windows.Forms.ToolStripMenuItem();
@@ -110,7 +113,6 @@ namespace com.amonsoft.extparse
             this.PB_Hide = new System.Windows.Forms.PictureBox();
             this.PB_Exit = new System.Windows.Forms.PictureBox();
             this.PB_Logo = new System.Windows.Forms.PictureBox();
-            this.MI_VoteExts = new System.Windows.Forms.ToolStripMenuItem();
             this.PL_Body.SuspendLayout();
             this.GB_ExtsDesp.SuspendLayout();
             this.GB_ExtsProp.SuspendLayout();
@@ -626,6 +628,8 @@ namespace com.amonsoft.extparse
             // 
             this.PM_MenuList.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MI_SoftInfo,
+            this.MI_HomePage,
+            this.MI_SoftCode,
             this.toolStripSeparator1,
             this.toolStripMenuItem2,
             this.MI_TopFirst,
@@ -638,7 +642,7 @@ namespace com.amonsoft.extparse
             this.MI_HideForm,
             this.MI_ExitForm});
             this.PM_MenuList.Name = "PM_MenuList";
-            this.PM_MenuList.Size = new System.Drawing.Size(161, 242);
+            this.PM_MenuList.Size = new System.Drawing.Size(161, 286);
             // 
             // MI_SoftInfo
             // 
@@ -646,6 +650,20 @@ namespace com.amonsoft.extparse
             this.MI_SoftInfo.Size = new System.Drawing.Size(160, 22);
             this.MI_SoftInfo.Text = "关于(&A)";
             this.MI_SoftInfo.Click += new System.EventHandler(this.MI_SoftInfo_Click);
+            // 
+            // MI_HomePage
+            // 
+            this.MI_HomePage.Name = "MI_HomePage";
+            this.MI_HomePage.Size = new System.Drawing.Size(160, 22);
+            this.MI_HomePage.Text = "网站首页(&S)";
+            this.MI_HomePage.Click += new System.EventHandler(this.MI_HomePage_Click);
+            // 
+            // MI_SoftCode
+            // 
+            this.MI_SoftCode.Name = "MI_SoftCode";
+            this.MI_SoftCode.Size = new System.Drawing.Size(160, 22);
+            this.MI_SoftCode.Text = "项目首页(&P)";
+            this.MI_SoftCode.Click += new System.EventHandler(this.MI_SoftCode_Click);
             // 
             // toolStripSeparator1
             // 
@@ -835,6 +853,13 @@ namespace com.amonsoft.extparse
             this.MI_SearchBD.Text = "百度(&B)";
             this.MI_SearchBD.Click += new System.EventHandler(this.MI_SearchBD_Click);
             // 
+            // MI_VoteExts
+            // 
+            this.MI_VoteExts.Name = "MI_VoteExts";
+            this.MI_VoteExts.Size = new System.Drawing.Size(160, 22);
+            this.MI_VoteExts.Text = "贡献后缀信息(&V)";
+            this.MI_VoteExts.Click += new System.EventHandler(this.MI_VoteExts_Click);
+            // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
@@ -906,13 +931,6 @@ namespace com.amonsoft.extparse
             this.PB_Logo.MouseLeave += new System.EventHandler(this.PB_Logo_MouseLeave);
             this.PB_Logo.Click += new System.EventHandler(this.PB_Logo_Click);
             this.PB_Logo.MouseEnter += new System.EventHandler(this.PB_Logo_MouseEnter);
-            // 
-            // MI_VoteExts
-            // 
-            this.MI_VoteExts.Name = "MI_VoteExts";
-            this.MI_VoteExts.Size = new System.Drawing.Size(160, 22);
-            this.MI_VoteExts.Text = "贡献后缀信息(&V)";
-            this.MI_VoteExts.Click += new System.EventHandler(this.MI_VoteExts_Click);
             // 
             // FM_ExtParse
             // 
@@ -1038,5 +1056,7 @@ namespace com.amonsoft.extparse
         private System.Windows.Forms.LinkLabel LL_PageIdx6;
         private System.Windows.Forms.LinkLabel LL_PageIdx5;
         private System.Windows.Forms.ToolStripMenuItem MI_VoteExts;
+        private System.Windows.Forms.ToolStripMenuItem MI_HomePage;
+        private System.Windows.Forms.ToolStripMenuItem MI_SoftCode;
     }
 }
