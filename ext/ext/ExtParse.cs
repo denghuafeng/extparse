@@ -301,6 +301,26 @@ namespace com.amonsoft.extparse
         }
 
         /// <summary>
+        /// 网站首页
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MI_HomePage_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://amonsoft.cn/");
+        }
+
+        /// <summary>
+        /// 项目首页
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MI_SoftCode_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://code.google.com/p/extparse/");
+        }
+
+        /// <summary>
         /// 窗口置顶
         /// </summary>
         /// <param name="sender"></param>
@@ -1219,34 +1239,43 @@ namespace com.amonsoft.extparse
             {
                 i = 0;
             }
-            MultiIcon mi = new MultiIcon();
-            mi.Load(path);
-            if (i >= mi.Count)
-            {
-                i = 0;
-            }
-            SingleIcon si = mi[i];
 
-            // 取解析度最高的图像
-            List<Image> img = new List<Image>();
-            PixelFormat lpf = PixelFormat.Format8bppIndexed;
-            j = si.Count;
-            IconImage icon;
-            while (j > 0)
+            try
             {
-                icon = si[--j];
-                if (icon.PixelFormat < lpf)
+                // 提取图标信息
+                MultiIcon mi = new MultiIcon();
+                mi.Load(path);
+                if (i >= mi.Count)
                 {
-                    continue;
+                    i = 0;
                 }
-                if (icon.PixelFormat > lpf)
+                SingleIcon si = mi[i];
+
+                // 取解析度最高的图像
+                List<Image> img = new List<Image>();
+                PixelFormat lpf = PixelFormat.Format8bppIndexed;
+                j = si.Count;
+                IconImage icon;
+                while (j > 0)
                 {
-                    img.Clear();
-                    lpf = icon.PixelFormat;
+                    icon = si[--j];
+                    if (icon.PixelFormat < lpf)
+                    {
+                        continue;
+                    }
+                    if (icon.PixelFormat > lpf)
+                    {
+                        img.Clear();
+                        lpf = icon.PixelFormat;
+                    }
+                    img.Add(icon.Icon.ToBitmap());
                 }
-                img.Add(icon.Icon.ToBitmap());
+                return img.ToArray();
             }
-            return img.ToArray();
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         /// <summary>
