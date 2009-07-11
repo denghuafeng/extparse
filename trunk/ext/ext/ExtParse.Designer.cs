@@ -47,7 +47,7 @@ namespace com.amonsoft.extparse
             this.BT_HoldBugs = new System.Windows.Forms.Button();
             this.GB_ExtsDesp = new System.Windows.Forms.GroupBox();
             this.LV_ExtsAsoc = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.CH_ExtsSoft = new System.Windows.Forms.ColumnHeader();
             this.IL_IconList = new System.Windows.Forms.ImageList(this.components);
             this.LB_ExtsAsoc = new System.Windows.Forms.Label();
             this.TB_ExtsDesp = new System.Windows.Forms.TextBox();
@@ -337,7 +337,7 @@ namespace com.amonsoft.extparse
             // 
             this.LV_ExtsAsoc.BackColor = System.Drawing.Color.Ivory;
             this.LV_ExtsAsoc.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
+            this.CH_ExtsSoft});
             this.LV_ExtsAsoc.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.LV_ExtsAsoc.Location = new System.Drawing.Point(6, 152);
             this.LV_ExtsAsoc.MultiSelect = false;
@@ -349,10 +349,10 @@ namespace com.amonsoft.extparse
             this.LV_ExtsAsoc.UseCompatibleStateImageBehavior = false;
             this.LV_ExtsAsoc.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader1
+            // CH_ExtsSoft
             // 
-            this.columnHeader1.Text = "备选软件";
-            this.columnHeader1.Width = 246;
+            this.CH_ExtsSoft.Text = "备选软件";
+            this.CH_ExtsSoft.Width = 246;
             // 
             // IL_IconList
             // 
@@ -642,7 +642,7 @@ namespace com.amonsoft.extparse
             this.MI_HideForm,
             this.MI_ExitForm});
             this.PM_MenuList.Name = "PM_MenuList";
-            this.PM_MenuList.Size = new System.Drawing.Size(161, 286);
+            this.PM_MenuList.Size = new System.Drawing.Size(161, 264);
             // 
             // MI_SoftInfo
             // 
@@ -1043,7 +1043,7 @@ namespace com.amonsoft.extparse
         private System.Windows.Forms.ToolStripMenuItem MI_SearchYH;
         private System.Windows.Forms.Label LC_ExtsSoft;
         private System.Windows.Forms.Label LT_ExtsSoft;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader CH_ExtsSoft;
         private System.Windows.Forms.LinkLabel LL_LastPage;
         private System.Windows.Forms.LinkLabel LL_PageIdx1;
         private System.Windows.Forms.LinkLabel LL_PageIdx2;
