@@ -122,5 +122,12 @@ namespace com.amonsoft.extparse.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        internal static System.Drawing.Bitmap Null {
+            get {
+                object obj = ResourceManager.GetObject("Null", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
