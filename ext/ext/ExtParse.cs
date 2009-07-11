@@ -513,10 +513,8 @@ namespace com.amonsoft.extparse
         /// <param name="e"></param>
         private void MI_VoteExts_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show(this, "此操作会在保障您的计算机安全的基础上，从您的\n操作系统中读取一些后缀信息以完善网站的数据，\n确认要执行此操作吗？", "友情提示", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
-            if (dr != DialogResult.Yes) return;
-            int size = FindExts("user");
-            MessageBox.Show(this, String.Format("本次操作从您的操作系统中共提取到 {0} 条后缀信息，非常感谢您的参与！", size), "友情提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            FM_ExtCheck fmec = new FM_ExtCheck();
+            fmec.Show(this);
         }
 
         /// <summary>
@@ -1253,7 +1251,7 @@ namespace com.amonsoft.extparse
 
                 // 取解析度最高的图像
                 List<Image> img = new List<Image>();
-                PixelFormat lpf = PixelFormat.Format8bppIndexed;
+                PixelFormat lpf = PixelFormat.Format1bppIndexed;
                 j = si.Count;
                 IconImage icon;
                 while (j > 0)
