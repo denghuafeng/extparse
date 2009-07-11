@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExtCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtCheck.Designer.cs">
+      <DependentUpon>ExtCheck.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExtParse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ExtCheck.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExtCheck.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExtParse.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ExtParse.cs</DependentUpon>
@@ -126,6 +136,7 @@
   <ItemGroup>
     <Content Include="Logo.ico" />
     <Content Include="IconLib.dll" />
+    <None Include="Resources\Null.png" />
     <None Include="Web References\cn.amonsoft\exts0001.disco" />
     <None Include="Resources\00030.png" />
     <None Include="Resources\00040.png" />
