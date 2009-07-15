@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Drawing.IconLib;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
@@ -146,8 +147,8 @@ namespace com.amonsoft.extparse
                     key2 = key1.OpenSubKey(temp);
                     if (key2 != null)
                     {
-                        desp = ((String)key2.GetValue("") ?? "").TrimEnd(' ', ',');
-                        if (!desp.EndsWith("。"))
+                        desp = ((String)key2.GetValue("") ?? "").Trim(' ', '.', '。');
+                        if (!String.IsNullOrEmpty(desp))
                         {
                             desp += '。';
                         }
@@ -155,20 +156,23 @@ namespace com.amonsoft.extparse
                         if (key2 != null)
                         {
                             file = (String)key2.GetValue("");
-                            Image icon;
-                            ReadIcon(file, out icon);
-                            IL_ExtsList.Images.Add(icon);
                         }
                     }
                 }
 
+                Image icon = null;
                 // 检测后缀是否存在
                 temp = exts;
                 if (NeedExts(temp, mime))
                 {
-                    size += 1;
-                    LV_ExtsList.BeginInvoke(new EventHandler(ShowFind), new ListViewItem(new string[] { exts, mime, file, desp }, size));
+                    // 显示图标
+                    ReadIcon(file, out icon);
+                    IL_ExtsList.Images.Add(icon);
+
+                    // 显示内容
+                    LV_ExtsList.BeginInvoke(new EventHandler(ShowFind), new ListViewItem(new string[] { temp, mime, file, desp }, size));
                     desp = "参见：" + exts;
+                    size += 1;
                 }
                 // 大写
                 temp = exts.ToUpper();
@@ -176,9 +180,17 @@ namespace com.amonsoft.extparse
                 {
                     if (NeedExts(temp, mime))
                     {
-                        size += 1;
-                        LV_ExtsList.BeginInvoke(new EventHandler(ShowFind), new ListViewItem(new string[] { exts, mime, file, desp }, size));
+                        // 显示图标
+                        if (icon == null)
+                        {
+                            ReadIcon(file, out icon);
+                        }
+                        IL_ExtsList.Images.Add(icon);
+
+                        // 显示内容
+                        LV_ExtsList.BeginInvoke(new EventHandler(ShowFind), new ListViewItem(new string[] { temp, mime, file, desp }, size));
                         desp = "参见：" + exts;
+                        size += 1;
                     }
                 }
                 // 小写
@@ -187,8 +199,16 @@ namespace com.amonsoft.extparse
                 {
                     if (NeedExts(temp, mime))
                     {
+                        // 显示图标
+                        if (icon == null)
+                        {
+                            ReadIcon(file, out icon);
+                        }
+                        IL_ExtsList.Images.Add(icon);
+
+                        // 显示内容
+                        LV_ExtsList.BeginInvoke(new EventHandler(ShowFind), new ListViewItem(new string[] { temp, mime, file, desp }, size));
                         size += 1;
-                        LV_ExtsList.BeginInvoke(new EventHandler(ShowFind), new ListViewItem(new string[] { exts, mime, file, desp }, size));
                     }
                 }
             }
@@ -397,7 +417,7 @@ namespace com.amonsoft.extparse
             {
                 try
                 {
-                    i = int.Parse(path.Substring(j + 1)) - 1;
+                    i = int.Parse(path.Substring(j + 1));
                 }
                 catch (Exception)
                 {
@@ -453,9 +473,30 @@ namespace com.amonsoft.extparse
                 }
                 return img.ToArray();
             }
-            catch (Exception)
+            catch (Exception exp)
             {
                 return null;
+            }
+        }
+
+        private void LV_ExtsList_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.C)
+            {
+                if (LV_ExtsList.SelectedItems != null)
+                {
+                    ListView.SelectedListViewItemCollection lv = LV_ExtsList.SelectedItems;
+                    if (lv.Count > 0)
+                    {
+                        ListViewItem li = lv[0];
+                        StringBuilder sb = new StringBuilder();
+                        for (int i = 0; i < li.SubItems.Count; i += 1)
+                        {
+                            sb.Append(li.SubItems[i].Text).Append('\t');
+                        }
+                        Clipboard.SetDataObject(sb.ToString());
+                    }
+                }
             }
         }
     }

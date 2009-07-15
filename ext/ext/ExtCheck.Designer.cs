@@ -55,6 +55,7 @@ namespace com.amonsoft.extparse
             this.LV_ExtsList.TabIndex = 0;
             this.LV_ExtsList.UseCompatibleStateImageBehavior = false;
             this.LV_ExtsList.View = System.Windows.Forms.View.Details;
+            this.LV_ExtsList.KeyUp += new System.Windows.Forms.KeyEventHandler(this.LV_ExtsList_KeyUp);
             // 
             // CH_ExtsName
             // 
