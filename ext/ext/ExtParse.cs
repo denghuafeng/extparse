@@ -1219,7 +1219,7 @@ namespace com.amonsoft.extparse
             {
                 try
                 {
-                    i = int.Parse(path.Substring(j + 1)) - 1;
+                    i = int.Parse(path.Substring(j + 1));
                 }
                 catch (Exception)
                 {
