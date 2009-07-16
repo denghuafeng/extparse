@@ -135,7 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Logo.ico" />
-    <Content Include="IconLib.dll" />
+    <Content Include="lib\IconLib.dll" />
     <None Include="Resources\Null.png" />
     <None Include="Web References\cn.amonsoft\exts0001.disco" />
     <None Include="Resources\00030.png" />
