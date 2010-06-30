@@ -80,11 +80,11 @@ namespace com.amonsoft.extparse
             this.MI_HomePage = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_SoftCode = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MU_SoftSkin = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.MI_TopFirst = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MU_WinTrans = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_FormOP10 = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_FormOP09 = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_FormOP08 = new System.Windows.Forms.ToolStripMenuItem();
@@ -96,16 +96,19 @@ namespace com.amonsoft.extparse
             this.MI_FormOP02 = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_FormOP01 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MU_DataExpt = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_ExptHtml = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_ExptText = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MU_SrchLine = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_SearchGG = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_SearchYH = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_SearchYD = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_SearchBD = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_VoteExts = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.MI_ShotSoft = new System.Windows.Forms.ToolStripMenuItem();
+            this.MI_ShotOpts = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.MI_HideForm = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_ExitForm = new System.Windows.Forms.ToolStripMenuItem();
             this.MS_IconMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -631,18 +634,21 @@ namespace com.amonsoft.extparse
             this.MI_HomePage,
             this.MI_SoftCode,
             this.toolStripSeparator1,
-            this.toolStripMenuItem2,
+            this.MU_SoftSkin,
             this.MI_TopFirst,
-            this.toolStripMenuItem5,
+            this.MU_WinTrans,
             this.toolStripSeparator3,
-            this.toolStripMenuItem6,
-            this.toolStripMenuItem7,
+            this.MU_DataExpt,
+            this.MU_SrchLine,
             this.MI_VoteExts,
             this.toolStripSeparator4,
+            this.MI_ShotSoft,
+            this.MI_ShotOpts,
+            this.toolStripSeparator5,
             this.MI_HideForm,
             this.MI_ExitForm});
             this.PM_MenuList.Name = "PM_MenuList";
-            this.PM_MenuList.Size = new System.Drawing.Size(161, 264);
+            this.PM_MenuList.Size = new System.Drawing.Size(161, 336);
             // 
             // MI_SoftInfo
             // 
@@ -670,15 +676,15 @@ namespace com.amonsoft.extparse
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(157, 6);
             // 
-            // toolStripMenuItem2
+            // MU_SoftSkin
             // 
-            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MU_SoftSkin.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem3,
             this.toolStripSeparator2});
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(160, 22);
-            this.toolStripMenuItem2.Text = "界面皮肤(&S)";
-            this.toolStripMenuItem2.Visible = false;
+            this.MU_SoftSkin.Name = "MU_SoftSkin";
+            this.MU_SoftSkin.Size = new System.Drawing.Size(160, 22);
+            this.MU_SoftSkin.Text = "界面皮肤(&S)";
+            this.MU_SoftSkin.Visible = false;
             // 
             // toolStripMenuItem3
             // 
@@ -698,9 +704,9 @@ namespace com.amonsoft.extparse
             this.MI_TopFirst.Text = "窗口置顶(&T)";
             this.MI_TopFirst.Click += new System.EventHandler(this.MI_TopFirst_Click);
             // 
-            // toolStripMenuItem5
+            // MU_WinTrans
             // 
-            this.toolStripMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MU_WinTrans.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MI_FormOP10,
             this.MI_FormOP09,
             this.MI_FormOP08,
@@ -711,9 +717,9 @@ namespace com.amonsoft.extparse
             this.MI_FormOP03,
             this.MI_FormOP02,
             this.MI_FormOP01});
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(160, 22);
-            this.toolStripMenuItem5.Text = "窗口透明(&O)";
+            this.MU_WinTrans.Name = "MU_WinTrans";
+            this.MU_WinTrans.Size = new System.Drawing.Size(160, 22);
+            this.MU_WinTrans.Text = "窗口透明(&O)";
             // 
             // MI_FormOP10
             // 
@@ -790,15 +796,15 @@ namespace com.amonsoft.extparse
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(157, 6);
             // 
-            // toolStripMenuItem6
+            // MU_DataExpt
             // 
-            this.toolStripMenuItem6.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MU_DataExpt.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MI_ExptHtml,
             this.MI_ExptText});
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(160, 22);
-            this.toolStripMenuItem6.Text = "数据导出(&P)";
-            this.toolStripMenuItem6.Visible = false;
+            this.MU_DataExpt.Name = "MU_DataExpt";
+            this.MU_DataExpt.Size = new System.Drawing.Size(160, 22);
+            this.MU_DataExpt.Text = "数据导出(&P)";
+            this.MU_DataExpt.Visible = false;
             // 
             // MI_ExptHtml
             // 
@@ -814,16 +820,16 @@ namespace com.amonsoft.extparse
             this.MI_ExptText.Text = "文本文件";
             this.MI_ExptText.Click += new System.EventHandler(this.MI_ExptText_Click);
             // 
-            // toolStripMenuItem7
+            // MU_SrchLine
             // 
-            this.toolStripMenuItem7.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MU_SrchLine.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MI_SearchGG,
             this.MI_SearchYH,
             this.MI_SearchYD,
             this.MI_SearchBD});
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(160, 22);
-            this.toolStripMenuItem7.Text = "在线搜索(&Q)";
+            this.MU_SrchLine.Name = "MU_SrchLine";
+            this.MU_SrchLine.Size = new System.Drawing.Size(160, 22);
+            this.MU_SrchLine.Text = "在线搜索(&Q)";
             // 
             // MI_SearchGG
             // 
@@ -864,6 +870,25 @@ namespace com.amonsoft.extparse
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(157, 6);
+            // 
+            // MI_ShotSoft
+            // 
+            this.MI_ShotSoft.Name = "MI_ShotSoft";
+            this.MI_ShotSoft.Size = new System.Drawing.Size(160, 22);
+            this.MI_ShotSoft.Text = "软件截图";
+            this.MI_ShotSoft.Click += new System.EventHandler(this.MI_ShotSoft_Click);
+            // 
+            // MI_ShotOpts
+            // 
+            this.MI_ShotOpts.Name = "MI_ShotOpts";
+            this.MI_ShotOpts.Size = new System.Drawing.Size(160, 22);
+            this.MI_ShotOpts.Text = "截图选项";
+            this.MI_ShotOpts.Click += new System.EventHandler(this.MI_ShotOpts_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(157, 6);
             // 
             // MI_HideForm
             // 
@@ -995,14 +1020,14 @@ namespace com.amonsoft.extparse
         private System.Windows.Forms.ContextMenuStrip PM_MenuList;
         private System.Windows.Forms.ToolStripMenuItem MI_SoftInfo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem MU_SoftSkin;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem MI_TopFirst;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem MU_WinTrans;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem MU_DataExpt;
+        private System.Windows.Forms.ToolStripMenuItem MU_SrchLine;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem MI_HideForm;
         private System.Windows.Forms.ToolStripMenuItem MI_ExitForm;
@@ -1058,5 +1083,8 @@ namespace com.amonsoft.extparse
         private System.Windows.Forms.ToolStripMenuItem MI_VoteExts;
         private System.Windows.Forms.ToolStripMenuItem MI_HomePage;
         private System.Windows.Forms.ToolStripMenuItem MI_SoftCode;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem MI_ShotSoft;
+        private System.Windows.Forms.ToolStripMenuItem MI_ShotOpts;
     }
 }

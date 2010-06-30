@@ -9,9 +9,10 @@ using System.Net;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Xml;
-using com.amonsoft.extparse.cn.amonsoft;
+using com.amonsoft.extparse.exts0001;
 using com.amonsoft.extparse.Properties;
 using Microsoft.Win32;
+using System.Threading;
 
 namespace com.amonsoft.extparse
 {
@@ -21,31 +22,30 @@ namespace com.amonsoft.extparse
         /// 每页显示数量
         /// </summary>
         private const int PAGESIZE = 9;
-
         /// <summary>
         /// 结果记录数量
         /// </summary>
         private static int cnt = 1;
-
         /// <summary>
         /// 上一次访问索引
         /// </summary>
         private static int idx;
-
         /// <summary>
         /// 导航链接数组
         /// </summary>
         private static LinkLabel[] lls;
-
         /// <summary>
         /// 页面偏移记录
         /// </summary>
         private static int off;
-
         /// <summary>
         /// XML文档对象
         /// </summary>
         private static XmlDocument xml;
+        /// <summary>
+        /// 状态栏句柄
+        /// </summary>
+        private static IntPtr bar;
 
         #region 界面初始化
 
@@ -515,6 +515,33 @@ namespace com.amonsoft.extparse
         {
             FM_ExtCheck fmec = new FM_ExtCheck();
             fmec.Show(this);
+        }
+
+        /// <summary>
+        /// 屏幕截图事件处理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MI_ShotSoft_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Thread.Sleep(1000 * Settings.Default.screenshot_t + 300);
+            Settings settings = Settings.Default;
+            RECT rect = ResizeWin(settings.screenshot_m, settings.screenshot_s, settings.screenshot_r, settings.screenshot_x, settings.screenshot_y, settings.screenshot_w, settings.screenshot_h);
+
+            CaptureImage(new Point(rect.left, rect.top), new Rectangle(rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top));
+
+            this.Visible = true;
+        }
+
+        /// <summary>
+        /// 截图选项事件处理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MI_ShotOpts_Click(object sender, EventArgs e)
+        {
+
         }
 
         /// <summary>
@@ -1329,6 +1356,104 @@ namespace com.amonsoft.extparse
             }
             return true;
         }
+
+        /// <summary>
+        /// 调整目标窗口的位置及大小
+        /// </summary>
+        /// <param name="scale"></param>
+        /// <param name="ratio"></param>
+        /// <param name="remove"></param>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="w"></param>
+        /// <param name="h"></param>
+        /// <returns></returns>
+        private RECT ResizeWin(bool remove, bool scale, bool ratio, int x, int y, int w, int h)
+        {
+            RECT rect = new RECT();
+
+            IntPtr p_Handle = GetForegroundWindow();
+
+            if (p_Handle != bar)
+            {
+                GetWindowRect(p_Handle, ref rect);
+                int fw = rect.right - rect.left;
+                int fh = rect.bottom - rect.top;
+                if (scale)
+                {
+                    if (ratio)
+                    {
+                        double rw = w / (double)fw;
+                        double rh = h / (double)fh;
+                        double r = rw < rh ? rw : rh;
+                        fw = (int)(fw * r);
+                        fh = (int)(fh * r);
+                    }
+                    else
+                    {
+                        fw = w;
+                        fh = h;
+                    }
+                }
+
+                int fx = rect.left;
+                int fy = rect.top;
+                if (remove)
+                {
+                    fx = x;
+                    fy = y;
+
+                    Rectangle size = Screen.PrimaryScreen.WorkingArea;
+
+                    if (fx < 0)
+                    {
+                        fx = (size.Width - fw) >> 1;
+                    }
+                    if (fy < 0)
+                    {
+                        fy = (size.Height - fh) >> 1;
+                    }
+                }
+                MoveWindow(p_Handle, fx, fy, fw, fh, true);
+
+                rect.left = fx;
+                rect.top = fy;
+                rect.bottom = fy + fh;
+                rect.right = fx + fw;
+            }
+            return rect;
+        }
+
+        /// <summary>
+        /// 截取目标窗口图像
+        /// </summary>
+        /// <param name="SourcePoint"></param>
+        /// <param name="SelectionRectangle"></param>
+        public void CaptureImage(Point SourcePoint, Rectangle SelectionRectangle)
+        {
+            using (Bitmap bitmap = new Bitmap(Settings.Default.screenshot_w, Settings.Default.screenshot_h))
+            {
+                using (Graphics g = Graphics.FromImage(bitmap))
+                {
+                    // g.CopyFromScreen(SourcePoint, DestinationPoint, SelectionRectangle.Size);
+                    g.CopyFromScreen(SourcePoint.X, SourcePoint.Y, (bitmap.Width - SelectionRectangle.Width) >> 1, (bitmap.Height - SelectionRectangle.Height) >> 1, SelectionRectangle.Size);
+                }
+                SaveFileDialog dialog = new SaveFileDialog();
+                dialog.Filter = "PNG格式|*.PNG";
+                if (DialogResult.OK == dialog.ShowDialog())
+                {
+                    bitmap.Save(dialog.FileName, ImageFormat.Png);
+                }
+                bitmap.Dispose();
+            }
+        }
+
+        [DllImport("user32.dll", ExactSpelling = true, SetLastError = true)]
+        internal static extern IntPtr GetForegroundWindow();
+        [DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true)]
+        internal static extern bool GetWindowRect(IntPtr hWnd, ref RECT rect);
+        [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall, ExactSpelling = true, SetLastError = true)]
+        internal static extern void MoveWindow(IntPtr hwnd, int X, int Y, int nWidth, int nHeight, bool bRepaint);
 
         #endregion
     }

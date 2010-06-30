@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
-using com.amonsoft.extparse.cn.amonsoft;
+using com.amonsoft.extparse.exts0001;
 using Microsoft.Win32;
 
 namespace com.amonsoft.extparse

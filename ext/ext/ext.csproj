@@ -1,8 +1,8 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.50727</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8B1583F2-3F51-49A4-8830-6C59C7F8C294}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -14,7 +14,7 @@
     <ManifestCertificateThumbprint>79DF4F911827F78FB2CDA9D2AA6EB04AA9541BAE</ManifestCertificateThumbprint>
     <ManifestKeyFile>ext_TemporaryKey.pfx</ManifestKeyFile>
     <GenerateManifests>true</GenerateManifests>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -28,6 +28,12 @@
     <UpdateUrl>http://amonsoft.cn/down/</UpdateUrl>
     <ApplicationVersion>3.3.0.%2a</ApplicationVersion>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -73,6 +79,12 @@
     <Compile Include="ExtParse.Designer.cs">
       <DependentUpon>ExtParse.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExtShots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtShots.Designer.cs">
+      <DependentUpon>ExtShots.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ExtCheck.resx">
@@ -82,6 +94,10 @@
     <EmbeddedResource Include="ExtParse.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ExtParse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtShots.resx">
+      <DependentUpon>ExtShots.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,7 +118,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Web References\cn.amonsoft\Reference.cs">
+    <Compile Include="RECT.cs" />
+    <Compile Include="Web References\exts0001\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -136,12 +153,12 @@
   <ItemGroup>
     <Content Include="Logo.ico" />
     <Content Include="lib\IconLib.dll" />
+    <None Include="Web References\exts0001\exts0001.disco" />
     <None Include="Resources\Null.png" />
-    <None Include="Web References\cn.amonsoft\exts0001.disco" />
     <None Include="Resources\00030.png" />
     <None Include="Resources\00040.png" />
-    <None Include="Web References\cn.amonsoft\exts0001.wsdl" />
-    <None Include="Web References\cn.amonsoft\Reference.map">
+    <None Include="Web References\exts0001\exts0001.wsdl" />
+    <None Include="Web References\exts0001\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -157,25 +174,25 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://amonsoft.cn/exts/exts0001.asmx">
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://amonsoft.net/exts/exts0001.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\cn.amonsoft\</RelPath>
-      <UpdateFromURL>http://amonsoft.cn/exts/exts0001.asmx</UpdateFromURL>
+      <RelPath>Web References\exts0001\</RelPath>
+      <UpdateFromURL>http://amonsoft.net/exts/exts0001.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>Extparse_cn_amonsoft_Exts0001</CachedSettingsPropName>
+      <CachedSettingsPropName>Extparse_exts0001_Exts0001</CachedSettingsPropName>
     </WebReferenceUrl>
-  </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
