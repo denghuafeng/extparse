@@ -40,8 +40,6 @@
       <wsdl:output message="tns:extsSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:portType name="Exts0001HttpGet" />
-  <wsdl:portType name="Exts0001HttpPost" />
   <wsdl:binding name="Exts0001Soap" type="tns:Exts0001Soap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="exts">
@@ -66,24 +64,12 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:binding name="Exts0001HttpGet" type="tns:Exts0001HttpGet">
-    <http:binding verb="GET" />
-  </wsdl:binding>
-  <wsdl:binding name="Exts0001HttpPost" type="tns:Exts0001HttpPost">
-    <http:binding verb="POST" />
-  </wsdl:binding>
   <wsdl:service name="Exts0001">
     <wsdl:port name="Exts0001Soap" binding="tns:Exts0001Soap">
-      <soap:address location="http://amonsoft.cn/exts/exts0001.asmx" />
+      <soap:address location="http://amonsoft.net/exts/exts0001.asmx" />
     </wsdl:port>
     <wsdl:port name="Exts0001Soap12" binding="tns:Exts0001Soap12">
-      <soap12:address location="http://amonsoft.cn/exts/exts0001.asmx" />
-    </wsdl:port>
-    <wsdl:port name="Exts0001HttpGet" binding="tns:Exts0001HttpGet">
-      <http:address location="http://amonsoft.cn/exts/exts0001.asmx" />
-    </wsdl:port>
-    <wsdl:port name="Exts0001HttpPost" binding="tns:Exts0001HttpPost">
-      <http:address location="http://amonsoft.cn/exts/exts0001.asmx" />
+      <soap12:address location="http://amonsoft.net/exts/exts0001.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
